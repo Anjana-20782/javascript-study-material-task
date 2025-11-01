@@ -21,3 +21,21 @@ addbtn.addEventListener("click",()=>{
     
 });
 
+
+form.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      let str="";
+
+      str+=`
+      
+      <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+      `;
+      document.getElementById("result").innerHTML=str
+
+})
