@@ -22,15 +22,15 @@ addbtn.addEventListener("click",()=>{
 });
 
 
+    let str="";
 form.addEventListener("submit",(e)=>{
 
-    e.preventDefault();
+ e.preventDefault();
 
     let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
 
-      let str="";
-
+     
       str+=`
       
       <p><strong>Name:</strong> ${name}</p>
